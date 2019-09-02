@@ -204,7 +204,11 @@ function build() {
   // add option
   var text = document.createElement('div');
   text.className = 'sgdpr-text';
-  text.innerText = 'Agree';
+  if (this.opts.buttonText !== null && typeof this.opts.buttonText === 'string') {
+    text.innerText = this.opts.buttonText;
+  } else {
+    text.innerText = 'Agree';
+  }
 
   var mob = document.createElement('div');
   mob.className = 'sgdpr-yes-mobile';

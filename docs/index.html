@@ -194,6 +194,7 @@
          <pre class="usage-code responsive-code"><code class="language-javascript">const notice = new SimpleGDPR({
   title: 'Cookies and Cream',
   message: 'Do you want some?',
+  buttonText: 'Agree',
   link: null,
   icons: true,
   theme: 'dark',
@@ -288,6 +289,15 @@ const notice = new SimpleGDPR({
                     <span class="hl-var">String</span>
                     <span class="hl-var">HTMLElement</span></td>
                   <td data-label="Description">Sets the message body of the notice box. The <span class="hl-def">link</span> property will not work if a String is passed to replace the message body. To retain the link property, pass in your grouping of HTMLElement with a child element(s) containing the class <span class="hl-def">sgdpr-policy</span>. See Custom Messages Method 2 for example.</td>
+                </tr>
+                <tr>
+                  <td data-label="Property" class="hl-prop">buttonText</td>
+                  <td data-label="Default">
+                    <span class="hl-def">Agree</span>
+                    </td>
+                  <td data-label="Value">
+                    <span class="hl-var">String</span></td>
+                  <td data-label="Description">Sets the text displayed on the button.</td>
                 </tr>
                 <tr>
                   <td data-label="Property" class="hl-prop">link</td>
